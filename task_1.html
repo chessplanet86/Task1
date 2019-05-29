@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Задание 1</title>
+    <!-- Подключение Vue.js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!-- Подключение скрипта с логикой -->
+    <script async src="task_1.js"></script>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <div id="app">
+        <div style="margin: 20px">
+            <div>
+                <label><b>Первое число:</b>
+                    <div>
+                        <input v-model.number="num_1">
+                    </div>
+
+                </label>
+
+            </div>
+            <div>
+                <label><b>Второе число:</b>
+                    <div>
+                        <input v-model.number="num_2">
+                    </div>
+                </label>
+            </div>
+            <p><button @click="sum">Сложить</button></p>
+            <p>Вывод: {{result}}</p>
+        </div>
+    </div>
+</body>
+
+</html>
